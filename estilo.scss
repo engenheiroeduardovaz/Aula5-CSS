@@ -1,0 +1,33 @@
+@import 'reset';
+
+$font-stack: Helvetica, Arial;
+$primary-color: #333;
+
+%message-shared {
+    text-decoration: underline;
+
+}
+
+body {
+    @extend %message-shared;
+    text-align: center;
+    background-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN9MCbJET_OmI-jvZ_rejAh8eo0hnAIFuo-Q&s;
+    
+}
+
+a {
+  color: $primary-color;
+
+}
+
+h1 {
+    em{
+        @extend %message-shared;
+        text-align: center;
+    
+    font: 100% $font-stack;
+    color: $primary-color
+    }
+}
+
+@debug $font-stack;
